@@ -45,6 +45,22 @@ const HelloWorldSceneAR = () => {
       />
       <ViroAmbientLight color={"#aaaaaa"} />
       <ViroSpotLight innerAngle={5} outerAngle={90} direction={[0, -1, -.2]} position={[0, 3, 1]} color="#ffffff" castsShadow={true} />
+      <ViroARPlaneSelector>
+        <Viro3DObject
+          source={require('./emoji_smile1.vrx')}
+          position={[0, .1, 0]}
+          scale={[.2, .2, .2]}
+          type="VRX"
+          dragType="FixedDistance" onDrag={() => { }} />
+      </ViroARPlaneSelector>
+      {/* <ViroNode position={[0, 0, -1]} dragType="FixedToWorld" onDrag={() => { }} >
+        <Viro3DObject
+          source={require('./emoji_smile.vrx')}
+          position={[0, .1, 0]}
+          scale={[.2, .2, .2]}
+          type="VRX"
+        />
+      </ViroNode> */}
     </ViroARScene>
   );
 };
