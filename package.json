@@ -12,7 +12,7 @@
     "podinstall": "cd ios && pod install && cd .."
   },
   "dependencies": {
-    "@viro-community/react-viro": "^2.21.0",
+    "@viro-community/react-viro": "^2.23.1",
     "react": "17.0.2",
     "react-native": "0.65.1"
   },
